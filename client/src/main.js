@@ -3,6 +3,8 @@ import "./style.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import Swal from "sweetalert2";
+
 // Importar componentes
 import { navbar } from "./components/navbar";
 import { hero } from "./components/hero";
@@ -28,4 +30,16 @@ await fetch("http://localhost:4321/auth/me", {})
     $root.appendChild(hero());
     // Añadir el componente de servicios al elemento raíz
     $root.appendChild(services(session ? { user: session } : null));
+  })
+  .catch((error) => {
+    console.error("Probablemente el servidor no está corriendo", error);
+
+    setTimeout(() => {
+      Swal.fire({
+        title: "Error",
+        text: "¡Algo salió mal! Por favor, comprueba que el servidor esté corriendo o recarga la página.",
+        icon: "error",
+        confirmButtonText: "Entendido",
+      });
+    }, 1000);
   });
