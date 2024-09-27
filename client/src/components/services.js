@@ -132,17 +132,10 @@ export const services = (session) => {
         cancelButtonText: "Cancel",
       }).then(async (result) => {
         if (result.isDismissed) return;
-        console.log("llegué aquí");
-        await fetch("http://localhost:4321/orders", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          credentials: "include",
-          body: JSON.stringify({
-            coffee: service.coffee,
-          }),
-        });
+
+        const coffe = service.coffee;
+
+        // ! IMPLEMENTAR LÓGICA PARA CREAR UNA ORDEN
       });
     });
   });

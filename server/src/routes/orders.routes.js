@@ -3,7 +3,6 @@ import {
   createOrderCtrl,
   getOrdersCtrl,
 } from "../controllers/order.controller.js";
-import { validateJwt } from "../middlewares/validateJwt.js";
 
 const ordersRouter = Router();
 
@@ -11,6 +10,6 @@ const ordersRouter = Router();
 ordersRouter.get("/", getOrdersCtrl);
 
 // ! FALTAN VALIDACIONES DE DATOS
-ordersRouter.post("/", validateJwt, createOrderCtrl);
+ordersRouter.post("/", createOrderCtrl);
 
 export { ordersRouter };

@@ -1,7 +1,6 @@
 import { Router } from "express";
 import {
   signInCtrl,
-  signOutCtrl,
   getMeCtrl,
   signUpCtrl,
 } from "../controllers/auth.controller.js";
@@ -16,7 +15,6 @@ const authRouter = Router();
 
 authRouter.post("/sign-in", signInValidation, applyValidations, signInCtrl);
 authRouter.post("/sign-up", signUpValidation, applyValidations, signUpCtrl);
-authRouter.get("/sign-out", signOutCtrl);
 authRouter.get("/me", validateJwt, getMeCtrl);
 
 export { authRouter };
