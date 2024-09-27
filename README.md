@@ -123,7 +123,7 @@ git push
 ```
 
 2. Verificar que el repositorio sea accesible y que todos los archivos necesarios estén incluidos.
-3. Enviar un correo electrónico con el enlace a su repositorio y cualquier información adicional que consideren relevante.
+3. Subir a la publicación del parcial de classroom el enlace a su repositorio y cualquier información adicional que consideren relevante.
 
 ## Criterios de Evaluación
 
