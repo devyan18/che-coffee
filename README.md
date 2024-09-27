@@ -108,19 +108,6 @@ En el código proporcionado, encontrarán comentarios que detallan las actividad
   - Implementar un manejo adecuado de errores y excepciones.
   - Proveer respuestas claras y significativas en caso de errores en las solicitudes.
 
-### Frontend
-
-- **Corregir el formulario de inicio de sesión:**
-  - Solucionar los problemas que impiden a los usuarios iniciar sesión.
-  - Asegurar que las validaciones en el formulario funcionen correctamente.
-- **Mejorar la interfaz de usuario:**
-  - Optimizar la experiencia de usuario en la creación y seguimiento de órdenes de café.
-  - Hacer la interfaz más intuitiva y amigable.
-- **Implementar notificaciones:**
-  - Añadir notificaciones o alertas que informen al usuario sobre el estado de sus acciones (por ejemplo, confirmación de órdenes, errores en formularios).
-- **Responsividad:**
-  - Asegurar que la aplicación sea responsiva y se visualice correctamente en diferentes dispositivos y navegadores.
-
 ## Entrega del Proyecto
 
 La fecha límite para entregar el repositorio con las reparaciones y mejoras realizadas es el 27 de septiembre a las 17:00 horas. Asegúrense de que su repositorio esté actualizado y accesible para su revisión.
@@ -143,8 +130,8 @@ git push
 Su trabajo será evaluado en base a los siguientes criterios:
 
 - **Funcionalidad:**
-  - Las reparaciones y mejoras implementadas resuelven eficazmente los problemas identificados.
-  - La aplicación cumple con los requisitos establecidos y funciona sin errores.
+  - Correcta implementación de las funcionalidades requeridas en cada parte del proyecto.
+  - Las acciones realizadas solucionan los problemas existentes y mejoran la experiencia de usuario.
 - **Calidad del Código:**
   - El código es limpio, legible y sigue las mejores prácticas de desarrollo.
   - Se utilizan comentarios cuando es necesario y se mantienen estándares de nomenclatura consistentes y en `inglés`.
